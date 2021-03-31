@@ -15,7 +15,7 @@
 		0415831D26152EC3003F64EA /* weight_trackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415831C26152EC3003F64EA /* weight_trackTests.swift */; };
 		0415832826152EC3003F64EA /* weight_trackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415832726152EC3003F64EA /* weight_trackUITests.swift */; };
 		0415833826153149003F64EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415833726153149003F64EA /* Persistence.swift */; };
-		0415833B26153233003F64EA /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0415833A26153233003F64EA /* SwiftUICharts */; };
+		0415833E261533E8003F64EA /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0415833D261533E8003F64EA /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0415833B26153233003F64EA /* SwiftUICharts in Frameworks */,
+				0415833E261533E8003F64EA /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +155,7 @@
 			);
 			name = "weight-track";
 			packageProductDependencies = (
-				0415833A26153233003F64EA /* SwiftUICharts */,
+				0415833D261533E8003F64EA /* SwiftUICharts */,
 			);
 			productName = "weight-track";
 			productReference = 0415830226152EC1003F64EA /* weight-track.app */;
@@ -229,7 +229,7 @@
 			);
 			mainGroup = 041582F926152EC1003F64EA;
 			packageReferences = (
-				0415833926153233003F64EA /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				0415833C261533E8003F64EA /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 0415830326152EC1003F64EA /* Products */;
 			projectDirPath = "";
@@ -598,20 +598,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0415833926153233003F64EA /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+		0415833C261533E8003F64EA /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mecid/SwiftUICharts";
+			repositoryURL = "https://github.com/AppPear/ChartView";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.2;
+				minimumVersion = 1.5.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0415833A26153233003F64EA /* SwiftUICharts */ = {
+		0415833D261533E8003F64EA /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0415833926153233003F64EA /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			package = 0415833C261533E8003F64EA /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
