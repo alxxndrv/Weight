@@ -8,6 +8,7 @@
 import SwiftUI
 import CoreData
 import SwiftUICharts
+import SwiftUIKeyboardHost
 
 struct ContentView: View {
 //    @Environment(\.managedObjectContext) private var viewContext
@@ -40,6 +41,7 @@ struct ContentView: View {
                 }
             }.navigationTitle("Weight")
         }
+        .background(SwifUIDismissKeyboard())
     }
 }
 

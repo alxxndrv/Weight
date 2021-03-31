@@ -9,6 +9,15 @@
           "revision": "9115a992c91fa19cbb4f2241084240d38654a1fc",
           "version": "1.5.5"
         }
+      },
+      {
+        "package": "SwiftUIKeyboardHost",
+        "repositoryURL": "https://github.com/Gaspard-Bruno/SwiftUIKeyboardHost",
+        "state": {
+          "branch": "master",
+          "revision": "0a8abdf20cae85c5e2653122ebfb1b4f1fbacce4",
+          "version": null
+        }
       }
     ]
   },
