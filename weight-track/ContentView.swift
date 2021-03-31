@@ -11,13 +11,33 @@ import SwiftUICharts
 
 struct ContentView: View {
 //    @Environment(\.managedObjectContext) private var viewContext
-
+    @State var currentWeight: String = ""
 
     var body: some View {
         NavigationView {
             VStack {
-                LineView(data: [], title: "Last month")
+                LineView(data: [0], title: "Last month")
                     .padding()
+                HStack {
+                    VStack{
+                        HStack {
+                            TextField("0.00 kg", text: $currentWeight).keyboardType(.numberPad)
+                            Button(action: {}) {
+                                Image(systemName: "chevron.right")
+                            }
+                        }
+                    }.padding()
+                    .padding(.vertical, 10)
+                    .background(RoundedRectangle(cornerRadius: 5).fill(Color(UIColor.secondarySystemFill)))
+                    .padding()
+                    Spacer()
+                    VStack {
+                        Text("Your goal").foregroundColor(Color.gray)
+                    Text("0.00 kg")
+                    }.padding()
+                    .background(RoundedRectangle(cornerRadius: 5).fill(Color(UIColor.secondarySystemFill)))
+                    .padding()
+                }
             }.navigationTitle("Weight")
         }
     }
