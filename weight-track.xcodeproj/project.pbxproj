@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		0415831D26152EC3003F64EA /* weight_trackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415831C26152EC3003F64EA /* weight_trackTests.swift */; };
 		0415832826152EC3003F64EA /* weight_trackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415832726152EC3003F64EA /* weight_trackUITests.swift */; };
 		0415833826153149003F64EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415833726153149003F64EA /* Persistence.swift */; };
+		0415833B26153233003F64EA /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0415833A26153233003F64EA /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0415833B26153233003F64EA /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = "weight-track";
+			packageProductDependencies = (
+				0415833A26153233003F64EA /* SwiftUICharts */,
+			);
 			productName = "weight-track";
 			productReference = 0415830226152EC1003F64EA /* weight-track.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 041582F926152EC1003F64EA;
+			packageReferences = (
+				0415833926153233003F64EA /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
 			productRefGroup = 0415830326152EC1003F64EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0415833926153233003F64EA /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mecid/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0415833A26153233003F64EA /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0415833926153233003F64EA /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0415831026152EC3003F64EA /* weight_track.xcdatamodeld */ = {
