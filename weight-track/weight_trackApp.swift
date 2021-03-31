@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct weight_trackApp: App {
-    let persistenceController = PersistenceController.shared
+    let context = PersistentCloudKitContainer.persistentContainer.viewContext
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, context)
         }
     }
 }

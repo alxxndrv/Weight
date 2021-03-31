@@ -11,10 +11,10 @@
 		0415830826152EC1003F64EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415830726152EC1003F64EA /* ContentView.swift */; };
 		0415830A26152EC3003F64EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415830926152EC3003F64EA /* Assets.xcassets */; };
 		0415830D26152EC3003F64EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415830C26152EC3003F64EA /* Preview Assets.xcassets */; };
-		0415830F26152EC3003F64EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415830E26152EC3003F64EA /* Persistence.swift */; };
 		0415831226152EC3003F64EA /* weight_track.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0415831026152EC3003F64EA /* weight_track.xcdatamodeld */; };
 		0415831D26152EC3003F64EA /* weight_trackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415831C26152EC3003F64EA /* weight_trackTests.swift */; };
 		0415832826152EC3003F64EA /* weight_trackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415832726152EC3003F64EA /* weight_trackUITests.swift */; };
+		0415833826153149003F64EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415833726153149003F64EA /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		0415830726152EC1003F64EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0415830926152EC3003F64EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0415830C26152EC3003F64EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0415830E26152EC3003F64EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0415831126152EC3003F64EA /* weight_track.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = weight_track.xcdatamodel; sourceTree = "<group>"; };
 		0415831326152EC3003F64EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0415831826152EC3003F64EA /* weight-trackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weight-trackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +48,7 @@
 		0415832326152EC3003F64EA /* weight-trackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weight-trackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0415832726152EC3003F64EA /* weight_trackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weight_trackUITests.swift; sourceTree = "<group>"; };
 		0415832926152EC3003F64EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0415833726153149003F64EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			children = (
 				0415830526152EC1003F64EA /* weight_trackApp.swift */,
 				0415830726152EC1003F64EA /* ContentView.swift */,
+				0415833726153149003F64EA /* Persistence.swift */,
 				0415830926152EC3003F64EA /* Assets.xcassets */,
-				0415830E26152EC3003F64EA /* Persistence.swift */,
 				0415831326152EC3003F64EA /* Info.plist */,
 				0415831026152EC3003F64EA /* weight_track.xcdatamodeld */,
 				0415830B26152EC3003F64EA /* Preview Content */,
@@ -265,8 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0415830F26152EC3003F64EA /* Persistence.swift in Sources */,
 				0415831226152EC3003F64EA /* weight_track.xcdatamodeld in Sources */,
+				0415833826153149003F64EA /* Persistence.swift in Sources */,
 				0415830826152EC1003F64EA /* ContentView.swift in Sources */,
 				0415830626152EC1003F64EA /* weight_trackApp.swift in Sources */,
 			);
