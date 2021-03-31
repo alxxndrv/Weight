@@ -14,7 +14,7 @@ import Combine
 struct ContentView: View {
 //    @Environment(\.managedObjectContext) private var viewContext
     @State var currentWeight: String = ""
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -25,26 +25,8 @@ struct ContentView: View {
                         HStack {
                             TextField("0.00 kg", text: $currentWeight).keyboardType(.decimalPad)
                                 .onReceive(Just(currentWeight)) { newValue in
-                                     var filtered = newValue.filter {
-                                        "0123456789,.".contains($0)
-                                     }
-                                    var decimalMet = false
-                                    for i in 0..<filtered.count{
-                                        if i == 0 && filtered[String.Index(encodedOffset: i)] == "0" {
-                                            filtered.remove(at: String.Index(encodedOffset: i))
-                                            continue
-                                        }
-                                        if filtered[String.Index(encodedOffset: i)] == "," {
-                                            if decimalMet {
-                                                filtered.remove(at: String.Index(encodedOffset: i))
-                                            }
-                                            decimalMet = true
-                                        }
-                                    }
-                                     if filtered != newValue {
-                                         self.currentWeight = filtered
-                                     }
-                                }
+                                    filterDecimal(newValue)
+                                         }
                             Button(action: {}) {
                                 Image(systemName: "chevron.right")
                             }
@@ -67,6 +49,30 @@ struct ContentView: View {
     }
 }
 
+extension ContentView {
+    func filterDecimal(_ newValue: String) {
+        var filtered = newValue.filter {
+           "0123456789,.".contains($0)
+        }
+       var decimalMet = false
+       for i in 0..<filtered.count{
+           if i == 0 && filtered[String.Index(encodedOffset: i)] == "0" {
+               filtered.remove(at: String.Index(encodedOffset: i))
+               continue
+           }
+           if filtered[String.Index(encodedOffset: i)] == "," {
+               if decimalMet {
+                   filtered.remove(at: String.Index(encodedOffset: i))
+               }
+               decimalMet = true
+           }
+       }
+        if filtered != newValue {
+            self.currentWeight = filtered
+        }
+
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
